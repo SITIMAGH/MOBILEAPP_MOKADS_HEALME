@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "880258358643",
+    "project_id": "healme-96b1b",
+    "storage_bucket": "healme-96b1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880258358643:android:bcc099f811622261d1f906",
+        "android_client_info": {
+          "package_name": "com.healme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880258358643-bn1bghalcdaqu9ott6p13ismqg7dv6rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.healme",
+            "certificate_hash": "16a68efd3f0f6ddea916e5fe55e675f2def87755"
+          }
+        },
+        {
+          "client_id": "880258358643-k1erqarkkapi1hok6mb3nnq13jnj3oq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRjipUuB_hcNPB6egL-Cby3ZS4vCwcXfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880258358643-996udngu98i68l1r2qfio0rnsv9qfgf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

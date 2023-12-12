@@ -1,0 +1,37 @@
+
+
+<?php $__env->startSection('title', 'Edit Banks'); ?>
+
+<?php $__env->startSection('page_title', 'Edit Banks'); ?>
+
+<?php $__env->startSection('content'); ?>
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow">
+            <form class="card-body" action="<?php echo e(base_url()); ?>admin/banks/update/<?php echo e($data->id); ?>" method="POST"
+                enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <select name="name" id="" class="form-control">
+                        <?php $__currentLoopData = ['BRI', 'BNI', 'BCA', 'MANDIRI', 'DANAMON']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <option <?php echo e($item == $data->name ? 'selected' : ''); ?>><?php echo e($item); ?></option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Number</label>
+                    <input type="number" name="number" id="" class="form-control" placeholder="89187678621" value="<?php echo e($data->number); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" name="username" id="" class="form-control" placeholder="John" value="<?php echo e($data->username); ?>" required>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Simpan" class="btn btn-primary mt-2">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\newxampp2\htdocs\moneygame\application\views/admin/banks/edit.blade.php ENDPATH**/ ?>

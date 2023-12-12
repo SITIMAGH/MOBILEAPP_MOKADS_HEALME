@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Healme"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".chat.ChatActivity"/>
+        <activity android:name=".obat.ObatActivity"/>
+        <activity android:name=".janji.JanjiActivity"/>
+        <activity android:name=".subscribe.SubscribeActivity"/>
+        <activity android:name=".cart.CartActivity"/>
+        <activity android:name=".home.DetailArticleActivity"/>
+        <activity android:name=".obat.DetailObatActivity"/>
+        <activity android:name=".history.DetailTransactionActivity"/>
+        <activity android:name=".dokter.DokterActivity"/>
+        <activity android:name=".chat.RoomchatActivity"/>
+    </application>
+
+</manifest>

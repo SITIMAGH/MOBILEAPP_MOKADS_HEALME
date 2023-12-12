@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/tv_left_itemroomchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam ipsa ratione voluptas exercitationem ab odit libero voluptates magni voluptatem? Expedita mollitia enim cum accusantium tempora omnis architecto, sed id."
+        android:padding="12dp"
+        android:background="@drawable/left_chat"
+        android:textColor="@color/black"
+        android:layout_gravity="left"/>
+    <TextView
+        android:id="@+id/tv_right_itemroomchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam ipsa ratione voluptas exercitationem ab odit libero voluptates magni voluptatem? Expedita mollitia enim cum accusantium tempora omnis architecto, sed id."
+        android:padding="12dp"
+        android:background="@drawable/right_chat"
+        android:textColor="@color/black"
+        android:layout_gravity="right"/>
+</LinearLayout>
